@@ -1,0 +1,254 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+#flexible {
+  background-color: rgba(255, 47, 0, 0.939);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.navBorder {
+  line-height: normal;
+  border: 1px solid rgba(255, 47, 0, 0.939);
+  background-color: rgba(255, 47, 0, 0.939);
+  display: block;
+  width: auto;
+  /* overflow:auto; */
+  height: 28px;
+  color: white;
+  font-size: large;
+  font-weight: 300;
+
+  top: 50%;
+}
+
+ul {
+  list-style-type: none; /* TO REMOVE DOTS OF UNORDERED LIST */
+  margin: 0px;
+  padding: 0px;
+  padding-top: 1%;
+  letter-spacing: 1.5px;
+}
+
+ul li {
+  padding-top: 1%;
+  float: left;
+  /* background-color: white; */
+  line-height: 30px;
+  width: 120px;
+  text-align: center;
+
+  border-radius: 100%;
+  margin-right: 0px;
+  float: right;
+}
+
+ul li a {
+  color: rgba(255, 47, 0, 0.939);
+  font-family: comic sans ms;
+  font-size: 21px;
+  font-weight: 545;
+  text-decoration: none;
+  display: block;
+}
+
+ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.958);
+  font-weight: bold;
+  border-radius: 100%;
+  text-decoration: underline;
+}
+
+#logo {
+  float: left;
+  width: 270px;
+  font-size: 20px;
+  margin-top: 3px;
+
+  list-style-type: none;
+
+  float: left;
+  /* background-color: white; */
+}
+
+#logo span {
+  font-weight: 600;
+  font-size: 45px;
+  color: rgb(255, 0, 0);
+}
+
+ul li img {
+  display: block;
+  width: 230px;
+  height: 70px;
+  padding: auto;
+  margin: auto;
+}
+
+ul li ul li {
+  display: none;
+}
+
+ul li:hover ul li {
+  display: block;
+
+  border: 1px solid rgba(255, 47, 0, 0.939);
+  /* position: absolute; */
+
+  border-radius: 100%;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+}
+
+.navbar.sticky {
+  margin-top: -4%;
+  background-color: black;
+
+  padding: 15px 0;
+}
+
+.navbar.sticky ul li a:hover {
+  background-color: white;
+}
+
+.navbar.sticky #right_menu li {
+  position: absolute;
+}
+
+.navbar.sticky #logo {
+  color: white;
+}
+
+
+.img_Container {
+  background-image: url(Donating.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  height: 100vh;
+  width: 100vh;
+  min-width: 100%;
+  font-family: "ubuntu", sans-serif;
+
+}
+
+#img_Content div {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.widthh {
+  padding: 135px 150px;
+  margin: auto;
+}
+
+.img_Container .widthh {
+  margin: auto 0 auto 40px;
+}
+
+.img_Container #img_Content .l2 {
+  font-size: 27px;
+  animation: zoomInDown 0.5s both ease;
+}
+
+.img_Container #img_Content .l1 {
+  font-size: 70px;
+  font-weight: 600;
+  margin-left: -3px;
+  animation: zoomInDown 0.5s both ease;
+}
+
+.img_Container #img_Content .l3 {
+  font-size: 24px;
+  margin: 5px 0;
+  animation: zoomInDown 0.5s both ease;
+}
+
+.button {
+  padding: 20px;
+  background-color: red;
+  border-radius: 40%;
+}
+
+#img_Content {
+  color: red;
+  /* width: 200px; */
+  word-wrap: break-word;
+  font-size: x-large;
+  font-weight: bold;
+  float: left;
+  padding-top: 20px;
+  color: black;
+
+  font-family: "Courier New", Courier, monospace;
+}
+
+footer {
+  padding: 4vh;
+  text-align: center;
+  color: white;
+  background: black;
+  font-weight: 600;
+  font-style: italic;
+  font-size: medium;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-btn {
+  color: rgba(255, 47, 0, 0.939);
+  font-size: 30px;
+  display: inline-block;
+}
+
+.menu-btn {
+  z-index: 999;
+  transition: all 0.5 ease;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  top: 50%;
+}
+.menu-btn #ico.active::before {
+  content: "\f00b";
+  font-size: 31px;
+  justify-content: center;
+}
+
+
+
+
+@media (max-width: 1072px) {
+  .menu-btn {
+    display: inline-block;
+    z-index: 999;
+    transition: all 0.5 ease;
+  }
+
+  #menu_right {
+    background-color: black;
+    display: none;
+  }
+
+
+}
+
+@media (max-width: 433px) {
+  #flexible {
+    display: none;
+  }
+}
