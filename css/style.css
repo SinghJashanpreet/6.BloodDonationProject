@@ -180,9 +180,10 @@ nav {
 }
 
 .button {
-  padding: 20px;
-  background-color: red;
-  border-radius: 40%;
+  padding: 15px;
+  background-color: #f15a5a;
+  border-radius: 35%;
+  
 }
 
 #img_Content {
@@ -204,7 +205,6 @@ footer {
   color: white;
   background: black;
   font-weight: 600;
-  font-style: italic;
   font-size: medium;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -252,3 +252,20 @@ footer {
     display: none;
   }
 }
+
+audio{
+  display: none;
+}
+
+
+.text1 {
+  font-size: 24px;
+  margin: 2px 0;
+  padding: 4%;
+  animation: zoomInDown 0.5s both ease;
+}
+
+.font-bold{
+  font-weight: 900;
+}
+
