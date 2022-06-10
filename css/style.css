@@ -142,6 +142,7 @@ nav {
   float: left;
   width: 33.33%;
   padding: 5px;
+  border: 5px solid #555;
 }
 
 /* Clear floats after image containers */
