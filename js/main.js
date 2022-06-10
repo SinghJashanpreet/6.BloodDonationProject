@@ -1,8 +1,15 @@
+var source = "audio.mp3"
+var audio = document.createElement("audio");
+//
+audio.autoplay = true;
+//
+audio.load()
+audio.addEventListener("load", function() { 
+    audio.play(); 
+}, true);
+audio.src = source;
 
 
-
-
-console.log("jashan");
 
 window.addEventListener("scroll", function () {
   const nav = document.querySelector(".navbar");
@@ -37,13 +44,13 @@ menubtn.addEventListener("click", () => {
 
 
   if (dropbtn.style.display === "none") {
-    dropbtn.style.display = "block";
+    dropbtn.style.display = "inline-block";
   } else {
     dropbtn.style.display = "none";
   }
 
   if (dropbtn1.style.display === "none") {
-    dropbtn1.style.display = "block";
+    dropbtn1.style.display = "inline-block";
   } else {
     dropbtn1.style.display = "none";
   }
