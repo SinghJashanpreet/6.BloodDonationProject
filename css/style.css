@@ -128,7 +128,7 @@ nav {
   .img_Container #img_Content .l4 {
     font-size: 50px;
     animation: zoomInDown 0.5s both ease;
-    padding-left: 15rem;
+    padding-left: 12rem;
     padding-right: 1rem;
     color:rgb(213, 13, 30);
     font-family: "ubuntu", fantasy;
