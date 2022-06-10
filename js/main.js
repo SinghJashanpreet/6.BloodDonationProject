@@ -13,7 +13,8 @@ const menubtn = document.getElementById("menubtn");
 const menu = document.getElementById("menu");
 const menu_right = document.getElementById("menu_right");
 const logo = document.getElementById("logo");
-
+const dropbtn= document.getElementById("dropbtn");
+const dropbtn1= document.getElementById("dropbtn1");
 
 menubtn.addEventListener("click", () => {
     
@@ -27,6 +28,27 @@ menubtn.addEventListener("click", () => {
   //     ico.classList.toggle("active");
     
   // }
+
+  if (logo.style.display === "none") {
+    logo.style.display = "block";
+  } else {
+    logo.style.display = "none";
+  }
+
+
+  if (dropbtn.style.display === "none") {
+    dropbtn.style.display = "block";
+  } else {
+    dropbtn.style.display = "none";
+  }
+
+  if (dropbtn1.style.display === "none") {
+    dropbtn1.style.display = "block";
+  } else {
+    dropbtn1.style.display = "none";
+  }
+
+
 });
 
 // var html = document.getElementsByClassName("html1");
@@ -37,6 +59,34 @@ menubtn.addEventListener("click", () => {
 // else{
 // document.innerHTML
 // }
+
+
+  //for active class
+  const filteritem = document.querySelector(".filter-projects");
+  const filterbox = document.querySelectorAll(".project-box");
+  
+  window.onload = () => {
+    //once window loaded
+    filteritem.onclick = (selectedItem) => {
+      if (selectedItem.target.classList.contains("item")) {
+        filteritem.querySelector(".f-active").classList.remove("f-active");
+        selectedItem.target.classList.add("f-active");
+        let filtername = selectedItem.target.getAttribute("data-filter");
+        filterbox.forEach((img) => {
+          let filterimgs = img.getAttribute("data-filter");
+          if (filterimgs == filtername || filtername == "all") {
+            img.classList.remove("hide");
+            img.classList.add("show");
+          } else {
+            img.classList.add("hide");
+            img.classList.remove("show");
+          }
+        });
+      }
+    };
+  };
+  
+
 
 
 
