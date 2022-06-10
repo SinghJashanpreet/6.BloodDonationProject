@@ -215,10 +215,11 @@ nav {
 }
 
 .img_Container #img_Content .l1 {
-  font-size: 70px;
+  font-size: 50px;
   font-weight: 600;
   margin-left: -3px;
   animation: zoomInDown 0.5s both ease;
+  text-decoration: underline;
 }
 
 .img_Container #img_Content .l3 {
