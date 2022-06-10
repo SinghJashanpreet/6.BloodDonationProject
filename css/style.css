@@ -113,6 +113,14 @@ nav {
   width: 100%;
 }
 
+/* .navbar{
+  z-index: 100;
+} */
+
+
+
+
+
 .navbar.sticky {
   margin-top: -4%;
   background-color: black;
@@ -124,16 +132,12 @@ nav {
   background-color: white;
 }
 
-.navbar.sticky #right_menu li {
-  position: absolute;
-}
-
 .navbar.sticky #logo {
   color: white;
 }
 
-
 .img_Container {
+  display: flex;
   background-image: url(../img/Donating.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -141,10 +145,10 @@ nav {
   background-size: cover;
 
   height: 100vh;
-  width: 100vh;
-  min-width: 100%;
+  width: 100%;
+  min-height: 500px;
   font-family: "ubuntu", sans-serif;
-
+  text-transform: capitalize;
 }
 
 #img_Content div {
@@ -153,12 +157,11 @@ nav {
 }
 
 .widthh {
-  padding: 135px 150px;
-  margin: auto;
+  margin: auto 0 auto 40px;
 }
 
 .img_Container .widthh {
-  margin: auto 0 auto 40px;
+  /* margin: auto 0 auto 40px; */
 }
 
 .img_Container #img_Content .l2 {
@@ -183,7 +186,6 @@ nav {
   padding: 15px;
   background-color: #f15a5a;
   border-radius: 35%;
-  
 }
 
 #img_Content {
@@ -200,10 +202,10 @@ nav {
 }
 
 footer {
-  padding: 4vh;
+  padding: 20px 0;
   text-align: center;
   color: white;
-  background: black;
+  background-color: black;
   font-weight: 600;
   font-size: medium;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -229,33 +231,147 @@ footer {
   justify-content: center;
 }
 
-
-
-
-@media (max-width: 1072px) {
-  .menu-btn {
-    display: inline-block;
-    z-index: 999;
-    transition: all 0.5 ease;
-  }
-
-  #menu_right {
-    background-color: black;
-    display: none;
-  }
-
-
+audio {
+  display: none;
 }
 
-@media (max-width: 433px) {
+#menubtn{
+  display: none;
+  
+}
+
+
+
+
+@media (max-width: 524px) {
   #flexible {
     display: none;
   }
+  .footer {
+    min-width: 100%;
+  }
 }
 
-audio{
-  display: none;
+
+
+@media (max-width: 840px) {
+
+  .menu-btn {
+    display: block;
+    z-index: 9999999;
+    transition: all 0.5 ease;
+  }
+  .menu-btn #ico.active::before {
+    content: "\f00d";
+  }
+
+  #menu_right {
+    position: fixed;
+    display: block;
+ /* z-index: 100; */
+    height: 100vh;
+    width: 100%;
+  left: -100%;
+    background: white;
+    background-attachment: fixed;
+    color: red;
+    text-align: center;
+    /* padding-top: 250px; */
+    transition: all 0.5s ease;
+  }
+
+ .navbar #menu {
+  /* z-index: 100; */
+    display: block;
+    color: red;
+    width: 200px;
+    text-align: center;
+     margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .menu-b {
+    display: block;
+    padding: 8px 16px;
+    margin: auto auto;
+
+  }
+ 
+.navbar #menu_right.active {
+    left: 0;
 }
+
+#menu li {
+  display: block;
+  margin-bottom: 15px;
+}
+
+  #flexible {
+    display: none;
+  }
+
+  #menubtn{
+    display: block;
+  }
+  /* #logo {
+    display: none;
+  } */
+  /* .footer {
+    display: none;
+  } */
+}
+
+/* @media (max-width: 1300px) {
+  .img_Container .widthh {
+    margin-left: 0;
+  }
+} */
+
+/* @media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
+  }
+} */
+
+/* @media (max-width: 947px) {
+  .menu-btn {
+    display: flex;
+    z-index: 999;
+    transition: all 0.5 ease;
+  }
+  .menu-btn #ico.active::before {
+    content: "\f00d";
+  }
+  .navbar #menu_right {
+    
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    background: #ff0303;
+    text-align: center;
+    padding-top: 250px;
+    transition: all 0.5s ease;
+} */
+/* .navbar #menu_right.active {
+    left: 0;
+}
+.navbar #menu_right li {
+    display: block;
+    margin-bottom: 25px;
+} */
+
+/* .img_Container #img_Content .l2 {
+    font-size: 65px; */
+
+/* 
+
+
+
+
 
 
 .text1 {
@@ -267,5 +383,4 @@ audio{
 
 .font-bold{
   font-weight: 900;
-}
-
+} */
