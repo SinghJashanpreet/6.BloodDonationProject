@@ -1,3 +1,7 @@
+
+
+
+
 console.log("jashan");
 
 window.addEventListener("scroll", function () {
@@ -10,29 +14,35 @@ const menu = document.getElementById("menu");
 const menu_right = document.getElementById("menu_right");
 const logo = document.getElementById("logo");
 
-// var html=menu_right.innerHTML;
+
 menubtn.addEventListener("click", () => {
-  if (menu_right.style.display === "none") {
-    menu_right.style.display = "block";
-    ico.classList.toggle("active");
-  } else {
-    // menu.classList.toggle("active");
-    ico.classList.toggle("active");
-    menu_right.style.display = "none";
-    logo.style.width("300");
-  }
+    
+  //  if (menu_right.style.position="fixed") {
+    menu.style.display = "block";
+    menu_right.classList.toggle("active");
+      ico.classList.toggle("active");
+  // } else {
+  //   menu.style.display = "block";
+  //   menu_right.classList.toggle("active");
+  //     ico.classList.toggle("active");
+    
+  // }
 });
 
-//   if(menu_right.style.width<="0px")
-//   {
-//     document.body.style.display="none";
-//     ico.classList.toggle("deactive");
-//   }
-// else{}
+// var html = document.getElementsByClassName("html1");
+// if(window.innerWidth<=830)
+// {
+//   html.innerHTML="<h1>jashan</h1>";
+// }
+// else{
+// document.innerHTML
+// }
+
+
 
 // start typeWriter by pure JS
 const txtElement = document.getElementById("typewriter");
-const typed = ["This is the Best Blood Donation portal."];
+const typed = ["Best Blood Donation portal."];
 let index = 0;
 let typer = 0;
 let currentTyped = [];
@@ -73,5 +83,9 @@ function loop() {
   const time = isEnd ? 1000 : isDeleting ? typeSpeed : normalSpeed;
   setTimeout(loop, time);
 }
+
+
+
+
 
 loop();
