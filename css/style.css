@@ -151,6 +151,12 @@ nav {
   clear: both;
   display: table;
 }
+/*bharti*/
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
 /* .navbar{
   z-index: 100;
 } */
