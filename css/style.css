@@ -113,6 +113,29 @@ nav {
   width: 100%;
 }
 
+
+
+
+  /*bharti*/
+  .img_Container #img_Content .l5 {
+    font-size: 20px;
+    animation: zoomInDown 0.5s both ease;
+    padding-left: 8rem;
+    padding-right: 1rem;
+    
+  }
+  /*bharti*/
+  .img_Container #img_Content .l4 {
+    font-size: 50px;
+    animation: zoomInDown 0.5s both ease;
+    padding-left: 15rem;
+    padding-right: 1rem;
+    color:rgb(213, 13, 30);
+    font-family: "ubuntu", fantasy;
+    text-decoration: underline;
+    text-align: center;
+  
+  }
 /* .navbar{
   z-index: 100;
 } */
@@ -272,7 +295,7 @@ audio {
     height: 100vh;
     width: 100%;
   left: -100%;
-    background: white;
+    background: black;
     background-attachment: fixed;
     color: red;
     text-align: center;
@@ -315,85 +338,17 @@ audio {
   #flexible {
     display: none;
   }
-/* 
-#logo{
- display: none;
-} */
-
-/* .dropdown{
-  display: ;
-} */
 
   #menubtn{
     display: block;
   }
 
-  /* .footer {
-    display: none;
-  } */
-}
 
-/* @media (max-width: 1300px) {
-  .img_Container .widthh {
-    margin-left: 0;
-  }
-} */
-
-/* @media (max-width: 991px) {
-  .max-width {
-    padding: 0 50px;
-  }
-} */
-
-/* @media (max-width: 947px) {
-  .menu-btn {
-    display: flex;
-    z-index: 999;
-    transition: all 0.5 ease;
-  }
-  .menu-btn #ico.active::before {
-    content: "\f00d";
-  }
-  .navbar #menu_right {
-    
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    top: 0;
-    left: -100%;
-    background: #ff0303;
-    text-align: center;
-    padding-top: 250px;
-    transition: all 0.5s ease;
-} */
-/* .navbar #menu_right.active {
-    left: 0;
-}
 .navbar #menu_right li {
     display: block;
     margin-bottom: 25px;
-} */
+} 
 
-/* .img_Container #img_Content .l2 {
-    font-size: 65px; */
-
-/* 
-
-
-
-
-
-
-.text1 {
-  font-size: 24px;
-  margin: 2px 0;
-  padding: 4%;
-  animation: zoomInDown 0.5s both ease;
-}
-
-.font-bold{
-  font-weight: 900;
-} */
 
 
 
@@ -429,7 +384,9 @@ audio {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+  border: 1px solid rgba(255, 47, 0, 0.939);
+  border-radius: 40%;background-color: #f1f1}
 
 
 .dropdown:hover .dropdown-content {
@@ -443,4 +400,10 @@ audio {
 
 .dropdown:hover, .dropdown:active{
   height:300px;
+}
+
+#Blood{
+  background:rgba(255, 47, 0, 0.939) ;
+  border: 1px solid rgba(255, 47, 0, 0.939);
+  border-radius: 40%;
 }
