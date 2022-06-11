@@ -78,7 +78,6 @@ ul li a:hover {
   list-style-type: none;
 
   float: left;
-  /* background-color: white; */
 }
 
 #logo span {
@@ -101,10 +100,7 @@ ul li ul li {
 
 ul li:hover ul li {
   display: block;
-
   border: 1px solid rgba(255, 47, 0, 0.939);
-  /* position: absolute; */
-
   border-radius: 100%;
 }
 
@@ -115,25 +111,21 @@ nav {
 
 /*bharti*/
 .img_Container #img_Content .l5 {
-
-display: flex;  font-size: 20px;
+  display: flex;
+  font-size: 20px;
   animation: zoomInDown 0.5s both ease;
-margin: auto auto;
+  margin: auto auto;
 }
 /*bharti*/
 .img_Container #img_Content .l4 {
-
-display: flex;  font-size: 50px;
+  display: flex;
+  font-size: 50px;
   animation: zoomInDown 0.5s both ease;
-margin: auto auto;
+  margin: auto auto;
   color: rgb(213, 13, 30);
   font-family: "ubuntu", fantasy;
   text-decoration: underline;
-  
 }
-/* .navbar{
-  z-index: 100;
-} */
 
 .navbar.sticky {
   margin-top: -4%;
@@ -174,10 +166,6 @@ margin: auto auto;
   margin: auto 0 auto 40px;
 }
 
-.img_Container .widthh {
-  /* margin: auto 0 auto 40px; */
-}
-
 .img_Container #img_Content .l2 {
   font-size: 27px;
   animation: zoomInDown 0.5s both ease;
@@ -204,14 +192,12 @@ margin: auto auto;
 
 #img_Content {
   color: red;
-  /* width: 200px; */
   word-wrap: break-word;
   font-size: x-large;
   font-weight: bold;
   float: left;
   padding-top: 20px;
   color: black;
-
   font-family: "Courier New", Courier, monospace;
 }
 
@@ -307,27 +293,27 @@ audio {
     padding: 8px 16px;
     margin: auto auto;
   }
-.navbar #menu_right.active {
-  left: 0;
-}
+  .navbar #menu_right.active {
+    left: 0;
+  }
 
-#menu li {
-  display: block;
-  margin-bottom: 15px;
-}
+  #menu li {
+    display: block;
+    margin-bottom: 15px;
+  }
 
-#flexible {
-  display: none;
-}
+  #flexible {
+    display: none;
+  }
 
-#menubtn {
-  display: block;
-}
+  #menubtn {
+    display: block;
+  }
 
-.navbar #menu_right li {
-  display: block;
-  margin-bottom: 25px;
-}
+  .navbar #menu_right li {
+    display: block;
+    margin-bottom: 25px;
+  }
 }
 .dropbtn {
   background-color: rgba(255, 47, 0, 0.939);
