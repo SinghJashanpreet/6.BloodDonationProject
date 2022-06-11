@@ -113,57 +113,27 @@ nav {
   width: 100%;
 }
 
+/*bharti*/
+.img_Container #img_Content .l5 {
 
+display: flex;  font-size: 20px;
+  animation: zoomInDown 0.5s both ease;
+margin: auto auto;
+}
+/*bharti*/
+.img_Container #img_Content .l4 {
 
-
-  /*bharti*/
-  .img_Container #img_Content .l5 {
-    font-size: 20px;
-    animation: zoomInDown 0.5s both ease;
-    padding-left: 8rem;
-    padding-right: 1rem;
-    
-  }
-  /*bharti*/
-  .img_Container #img_Content .l4 {
-    font-size: 50px;
-    animation: zoomInDown 0.5s both ease;
-    padding-left: 10rem;
-    padding-right: 1rem;
-    color:rgb(213, 13, 30);
-    font-family: "ubuntu", fantasy;
-    text-decoration: underline;
-    text-align: center;
+display: flex;  font-size: 50px;
+  animation: zoomInDown 0.5s both ease;
+margin: auto auto;
+  color: rgb(213, 13, 30);
+  font-family: "ubuntu", fantasy;
+  text-decoration: underline;
   
-  }
-/*bharti*/
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-  border: 5px solid #555;
-}
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-/*bharti*/
-@media screen and (max-width: 500px) {
-  .column {
-    width: 100%;
-  }
 }
 /* .navbar{
   z-index: 100;
 } */
-
-
-
-
 
 .navbar.sticky {
   margin-top: -4%;
@@ -211,15 +181,13 @@ nav {
 .img_Container #img_Content .l2 {
   font-size: 27px;
   animation: zoomInDown 0.5s both ease;
-  margin-left: 18px;
 }
 
 .img_Container #img_Content .l1 {
-  font-size: 55px;
+  font-size: 70px;
   font-weight: 600;
   margin-left: -3px;
   animation: zoomInDown 0.5s both ease;
-  text-decoration: underline;
 }
 
 .img_Container #img_Content .l3 {
@@ -281,13 +249,9 @@ audio {
   display: none;
 }
 
-#menubtn{
+#menubtn {
   display: none;
-  
 }
-
-
-
 
 @media (max-width: 524px) {
   #flexible {
@@ -298,10 +262,7 @@ audio {
   }
 }
 
-
-
 @media (max-width: 840px) {
-
   .menu-btn {
     display: block;
     z-index: 9999999;
@@ -314,10 +275,10 @@ audio {
   #menu_right {
     position: fixed;
     display: flex;
- z-index: -100;
+    z-index: -100;
     height: 100vh;
     width: 100%;
-  left: -100%;
+    left: -100%;
     background: black;
     background-attachment: fixed;
     color: red;
@@ -328,29 +289,26 @@ audio {
     transition: all 0.5s ease;
   }
 
- .navbar #menu {
-  /* z-index: 100; */
+  .navbar #menu {
+    /* z-index: 100; */
     display: flex;
     color: red;
     width: 200px;
     text-align: center;
     align-items: center;
-     margin-left: auto;
+    margin-left: auto;
     margin-right: 36%;
     margin-top: auto;
     margin-bottom: auto;
-    
   }
 
   .menu-b {
     display: block;
     padding: 8px 16px;
     margin: auto auto;
-
   }
- 
 .navbar #menu_right.active {
-    left: 0;
+  left: 0;
 }
 
 #menu li {
@@ -358,23 +316,19 @@ audio {
   margin-bottom: 15px;
 }
 
-  #flexible {
-    display: none;
-  }
-
-  #menubtn{
-    display: block;
-  }
-
-
-.navbar #menu_right li {
-    display: block;
-    margin-bottom: 25px;
-} 
+#flexible {
+  display: none;
 }
 
+#menubtn {
+  display: block;
+}
 
-
+.navbar #menu_right li {
+  display: block;
+  margin-bottom: 25px;
+}
+}
 .dropbtn {
   background-color: rgba(255, 47, 0, 0.939);
   color: white;
@@ -395,10 +349,9 @@ audio {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-
 
 .dropdown-content a {
   color: black;
@@ -409,8 +362,9 @@ audio {
 
 .dropdown-content a:hover {
   border: 1px solid rgba(255, 47, 0, 0.939);
-  border-radius: 40%;background-color: #f1f1}
-
+  border-radius: 40%;
+  background-color: #f1f1;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -420,13 +374,13 @@ audio {
   background-color: rgba(255, 47, 0, 0.939);
 }
 
-
-.dropdown:hover, .dropdown:active{
-  height:300px;
+.dropdown:hover,
+.dropdown:active {
+  height: 300px;
 }
 
-#Blood{
-  background:rgba(255, 47, 0, 0.939) ;
+#Blood {
+  background: rgba(255, 47, 0, 0.939);
   border: 1px solid rgba(255, 47, 0, 0.939);
   border-radius: 40%;
 }
